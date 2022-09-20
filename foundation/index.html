@@ -41,7 +41,7 @@
         </div>
     </header>
     <section class="what-is-it">
-        <div class="container flex">
+        <div class="container flex what-is-it__flex">
             <div class="what-is-it_block">
                 <h6 class="what-is-it_title">
                     What is it about?
@@ -61,17 +61,29 @@
         </div>
     </section>
     <section class="logos container">
-        <div class="flex">
-            <img src="./img/logos/bitmap1.png" alt="Bitmap">
-            <img src="./img/logos/bitmap2.png" alt="Bitmap">
-            <img src="./img/logos/bitmap3.png" alt="Bitmap">
-            <img src="./img/logos/bitmap4.png" alt="Bitmap">
-            <img src="./img/logos/bitmap5.png" alt="Bitmap">
-            <img src="./img/logos/bitmap6.png" alt="Bitmap">
+        <div class="logos__grid">
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap1.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap2.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap3.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap4.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap5.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap6.png" alt="Bitmap">
+            </div>
         </div>
     </section>
     <section class="inbox">
-        <div class="container flex">
+        <div class="container flex flex__inbox-column">
             <div class="container-image">
                 <img class="container-image_img" src="./img/inbox/ouch.svg" alt="img_inbox">
             </div>
@@ -87,7 +99,7 @@
                 </p>
                 <div class="inbox_response">
                     <p class="inbox_text">
-                        “Great widgets. Great selection. Great design and <span class="inbox_text-bold">easy to implement.</span> Definitely a huge time saver for a web developer!”
+                        “Great widgets. Great selection. Great design and <span class="bold">easy to implement.</span> Definitely a huge time saver for a web developer!”
                     </p>
                     <div class="flex flex_start">
                         <img class="inbox_img" src="./img/inbox/person.svg" alt="">
@@ -105,82 +117,84 @@
         </div>
     </section>
     <section class="better">
-        <div class="container flex">
+        <div class="container flex flex-column">
                 <div class="info">
-                    <p class="info_pretitle info_pretitle-blue">
-                        Communicate Better
-                    </p>
-                    <h3 class="info_title">
-                        Built for busy small teams
-                    </h3>
-                    <p class="info_text info_text-better">
-                        Three products that can be used independently or combined together for your company’s needs.
-                    </p>
-                    <button class="button">
-                        Get Started
-                    </button>
-                </div>
-                <div class="container-image">
-                    <img class="container-image_img" src="./img/better/ouch.svg" alt="img_inbox">
-                </div>
+                <p class="info_pretitle info_pretitle-blue">
+                    Communicate Better
+                </p>
+                <h3 class="info_title">
+                    Built for busy small teams
+                </h3>
+                <p class="info_text info_text-better">
+                    Three products that can be used independently or combined together for your company’s needs.
+                </p>
+                <button class="button">
+                    Get Started
+                </button>
+            </div>
+            <div class="container-image">
+                <img class="container-image_img" src="./img/better/ouch.svg" alt="img_inbox">
+            </div>
         </div>
         <div class="container better_grid">
-            <div>
+            <div class="better_block">
                 <p class="better_text">
-                    <span class="better_text-bold">Subscriptions.</span> Foundation works with the tools and services you already use every day.
+                    <span class="bold">Subscriptions.</span> Foundation works with the tools and services you already use every day.
                 </p>
                 <a class="better_link" href="#">Learn more about subscriptions</a>
             </div>
-            <div>
+            <div class="better_block">
                 <p class="better_text">
-                    <span class="better_text-bold">Felxible Hours.</span>  Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+                    <span class="bold">Felxible Hours.</span>  Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
                 </p>
                 <a class="better_link" href="#">Get more info about hours</a>
             </div>
-            <div>
+            <div class="better_block">
                 <p  class="better_text">
-                    <span style="font-weight: 700">Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data.
+                    <span class="bold">Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data.
                 </p>
                 <a  class="better_link" href="#">Communication guidelines</a>
             </div>
         </div>
     </section>
     <section class="categories">
-        <div class="container">
-            <h6 class="categories_pretitle">Engage Visitors</h6>
-            <h3 class="categories_title">Understand your audience</h3>
-            <p class="categories_text">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
-            <button class="button">Get Started</button>
-            <button class="button button_learn">Learn More</button>
-            <div class="categories_grid">
-                <div class="categories_item">
-                    <img class="categories_img" src="./img/categories/ouch1.png" alt="icons">
-                    <p class="categories_text">
-                        Developers
-                    </p>
-                </div>
-                <div class="categories_item">
-                    <img class="categories_img" src="./img/categories/ouch2.png" alt="icons">
-                    <p class="categories_text">
-                        Entertainment
-                    </p>
-                </div>
-                <div class="categories_item">
-                    <img class="categories_img" src="./img/categories/ouch3.png" alt="icons">
-                    <p class="categories_text">
-                        Athletes
-                    </p>
-                </div>
-                <div class="categories_item">
-                    <img class="categories_img" src="./img/categories/ouch4.png" alt="icons">
-                    <p class="categories_text">
-                        Creators
-                       </p>
-                </div>
+        <div class="container flex flex-column">
+            <div class="container">
+                <h6 class="info_pretitle info_pretitle-black">Engage Visitors</h6>
+                <h3 class="info_title">Understand your audience</h3>
+                <p class="info_text">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
+                <button class="button">Get Started</button>
+                <button class="button button_learn">Learn More</button>
+            </div>
+        </div>
+        <div class="container categories_grid">
+            <div class="categories_item">
+                <img class="categories_img" src="./img/categories/ouch1.png" alt="icons">
+                <p class="categories_text">
+                    Developers
+                </p>
+            </div>
+            <div class="categories_item">
+                <img class="categories_img" src="./img/categories/ouch2.png" alt="icons">
+                <p class="categories_text">
+                    Entertainment
+                </p>
+            </div>
+            <div class="categories_item">
+                <img class="categories_img" src="./img/categories/ouch3.png" alt="icons">
+                <p class="categories_text">
+                    Athletes
+                </p>
+            </div>
+            <div class="categories_item">
+                <img class="categories_img" src="./img/categories/ouch4.png" alt="icons">
+                <p class="categories_text">
+                    Creators
+                   </p>
             </div>
         </div>
     </section>
-    <section class="all-surfaces">
+    <section class="all-surfaces"> 
         <div class="container">
             <h6 class="all-surfaces_title">
                 All Surfaces Covered
