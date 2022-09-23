@@ -359,6 +359,71 @@
    grid-row: span 2;
 }
 
+.trial{
+    padding: 73px 0 72px;
+    background: #F4F5F7;
+}
+
+.trial_grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.trial_img{
+    text-align: end;
+}
+
+.trial_form{
+    max-width: 555px;
+    margin-left: 121px;
+}
+
+.trial_title{
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    color: #2B292D;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.trial_text{
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+    margin-bottom: 26px;
+}
+
+.trial_input{
+    margin-bottom: 10px;   
+}
+
+.trial_email{
+    background: #FFFFFF;
+    padding: 17px 15px 18px;    
+    font-size: 18px;
+    line-height: 13px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 2px;
+    width: 385px;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+.trial_email::placeholder{
+    color: #2B292D;
+}
+
+.trial_check{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.trial_link{
+    color: rgba(49, 66, 198, 1);
+}
+
 @media screen and (max-width: 1200px){
     .container{
         max-width: 1040px;
@@ -558,6 +623,73 @@
     .all-surfaces_img:nth-child(2){
         grid-row: 4/5;
         grid-column: 2/3;
+    }
+    
+    .trial{
+        padding: 76px 0 62px;
+        text-align: center;
+    }
+    
+    .trial_grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 13px;
+    }
+
+    .trial_box:nth-child(2){
+        grid-row: 1/2;
+    }
+    
+    .trial_img{
+        text-align: center;
+    }
+    
+    .trial_form{
+        max-width: 590px;
+        margin: 0 auto;
+        /* align-items: center; */
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+
+    .trial_title{
+        max-width: 325px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        color: #2B292D;
+        margin: 0 auto 51px;
+    }
+
+    .trial_text{
+        margin-bottom: 35px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .trial_input{
+        max-width: 598px;
+        margin-bottom: 21px;
+    }
+
+    .trial_email{
+        max-width: 290px;
+    }
+
+    .trial_button{
+        width: 290px;
+    }
+
+    .tr1{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .trial_check{
+        margin-bottom: 13px;
+        width: 431px;
+        text-align: start;
     }
 }
 
