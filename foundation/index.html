@@ -25,21 +25,52 @@
                     </p>
                 </div>
             </div>
-            <nav class="header_nav flex">
-                <ul class="header_ul flex">
-                    <li class="header_li">
-                        <a class="header_link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="header_link" href="">Stories</a>
-                    </li>
-                </ul>
-                <button class="button">
-                    Get Started
-                </button>
-            </nav>
+            <div class="menu">
+                <input type="checkbox" class="menu_checkbox">
+                <div class="menu_check-wrapper">
+                    <div class="menu_check"></div>
+                    <div class="menu_check"></div>
+                    <div class="menu_check"></div>
+                </div>            
+                <nav class="header_nav flex">
+                    <ul class="header_ul flex flex_menu">
+                        <li class="header_li">
+                            <a class="header_link" href="#">Home</a>
+                        </li>
+                        <li class="header_li">
+                            <a class="header_link" href="">Stories</a>
+                        </li>
+                    </ul>
+                    <button class="button">
+                        Get Started
+                    </button>
+                </nav>
+            </div>
         </div>
     </header>
+    <section class="main">
+        <div class="container flex main_container">
+            <div>
+                <h1 class="main_title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="main_text">
+                    Create live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div>
+                    <button class="button">
+                        Get Started
+                    </button>
+                    <button class="button button-white">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/main/ouch.png" alt="pic_main">
+            </div>
+        </div>
+    </section>
     <section class="what-is-it">
         <div class="container flex what-is-it__flex">
             <div class="what-is-it_block">
@@ -164,7 +195,7 @@
                 <h3 class="info_title">Understand your audience</h3>
                 <p class="info_text">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
                 <button class="button">Get Started</button>
-                <button class="button button_learn">Learn More</button>
+                <button class="button button-white">Learn More</button>
             </div>
         </div>
         <div class="container categories_grid">
@@ -233,16 +264,96 @@
                         </button>
                     </div>
                 </div>
-                <div class="tr1">
-                    <p class="trial_check">                       
-                        Free 14-day trial · Easy setup · Cancel any time. Check out 
-                        <a class="trial_link" href="">
-                            Terms of Use.
-                        </a>                  
-                    </p>
+                <div class="trial_undertext">
+                    <label class="trial_label">
+                        <input class="checkbox" type="checkbox">
+                        <span class="fake"></span>
+                        <span class="trial_check">                       
+                            Free 14-day trial · Easy setup · Cancel any time. Check out 
+                            <a class="trial_link" href="">
+                                Terms of Use.
+                            </a> 
+                        </span>                 
+                    </label>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="container flex footer_grid footer_container">
+                <div class="logo_box">
+                    <div class="footer-logo flex flex_start">
+                        <img src="./img/footer/logo_footer.svg" alt="logo">
+                        <div>
+                            <h6 class="footer-logo_title">
+                                Foundation
+                            </h6>
+                            <p class="footer-logo_text">
+                                Startup landing template
+                            </p>
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                    </p>
+                    <div class="footer_download">
+                        <a class="footer_link footer_link-img" href="">
+                            <img src="./img/footer/AppStore.png" alt="logo AppStore">
+                        </a>
+                        <a class="footer_link footer_link-img" href="">
+                            <img src="./img/footer/Google Play.png" alt="logo Google play">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-info">
+                        <div class="footer-info_box">
+                            <h5 class="footer-text_title">
+                                Product
+                            </h5>
+                            <a class="footer-text_link" href=""><p>Acquire Users</p></a>
+                            <a class="footer-text_link" href=""><p>Content Marketing</p></a>
+                            <a class="footer-text_link" href=""><p>Website Templates</p></a>
+                            <a class="footer-text_link" href=""><p>Customer Management</p></a>
+                            <a class="footer-text_link" href=""><p>Virtual Inbox</p></a>
+                        </div>
+                        <div class="footer-info_box">
+                            <h5 class="footer-text_title">
+                                Company
+                            </h5>
+                            <a class="footer-text_link" href=""><p>About Foundation</p></a>
+                            <a class="footer-text_link" href=""><p>Brand Guidelines</p></a>
+                            <a class="footer-text_link" href=""><p>Press Kit</p></a>
+                            <a class="footer-text_link" href=""><p>Support</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>          
+            <hr class="footer_line">
+            <div class="container">
+                <div class="flex">
+                    <div class="flex footer_rules">
+                        <a class="footer_link" href="">Terms</a> 
+                        <a class="footer_link" href="">Privacy</a>
+                        <a class="footer_link" href="">License</a>
+                    </div>
+                    <div class="footer_social">
+                        <a class="footer_link" href="">
+                            <img src="./img/footer/icon-twitter.png" alt="social_icon">
+                        </a>
+                        <a class="footer_link" href="">
+                            <img src="./img/footer/icon-fb.png" alt="social_icon">
+                        </a>
+                        <a class="footer_link" href="">
+                            <img src="./img/footer/LinkedIn.png" alt="social_icon">
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </footer>
 </body>
 </html>
