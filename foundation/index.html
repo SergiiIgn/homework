@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./style/style.css">
     <title>Foundation</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header container-1440">
         <div class="container flex">
             <div class="logo flex">
                 <img src="./img/header/logo.svg" alt="logo">
@@ -48,7 +49,7 @@
             </div>
         </div>
     </header>
-    <section class="main">
+    <section class="main container-1440">
         <div class="container flex main_container">
             <div>
                 <h1 class="main_title">
@@ -61,7 +62,7 @@
                     <button class="button">
                         Get Started
                     </button>
-                    <button class="button button-white">
+                    <button id="open-modal" class="button button-white">
                         Learn More
                     </button>
                 </div>
@@ -71,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="what-is-it">
+    <section class="what-is-it container-1440">
         <div class="container flex what-is-it__flex">
             <div class="what-is-it_block">
                 <h6 class="what-is-it_title">
@@ -113,7 +114,76 @@
             </div>
         </div>
     </section>
-    <section class="inbox">
+    <section class="features container-1440">
+        <div class="container flex features_container">
+            <div class="info">
+                <p class="info_pretitle info_pretitle-green">
+                    Features
+                </p>
+                <h3 class="info_title">
+                    Easily find leads and customers
+                </h3>
+                <p class="info_text info_text-better">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+                <div class="feature-items">
+                    <div class="features-item">                       
+                        <div class="flex flex_start">
+                            <svg class="features-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="features-icon_img" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z" fill="#2B292D"/>
+                            </svg>
+                            <p class="features-pretitle">
+                                Acquire new customers
+                            </p>
+                        </div>
+                        <p class="features-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                        <hr class="features-line">
+                    </div>                   
+                </div>
+                <div class="feature-items">
+                    <div class="features-item">                       
+                        <div class="flex flex_start">
+                            <svg class="features-icon" width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="features-icon_img" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105ZM9.68421 10.7143V19.0476H13.3158V10.7143H9.68421ZM23 21.4286V25H0V21.4286H23ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474Z" fill="#2B292D"/>
+                            </svg>
+                            <p class="features-pretitle">
+                                Engage users
+                            </p>
+                        </div>
+                        <p class="features-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                        <hr class="features-line">
+                    </div>                   
+                </div>
+                <div class="feature-items">
+                    <div class="features-item">                       
+                        <div class="flex flex_start">
+                            <svg class="features-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="features-icon_img" fill-rule="evenodd" clip-rule="evenodd" d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM19.5556 7.33333H14.6667C14.6667 9.31333 12.98 11 11 11C9.02 11 7.33333 9.31333 7.33333 7.33333H2.44444V2.44444H19.5556V7.33333ZM22 15.8889H14.6667C14.6667 17.9178 13.0289 19.5556 11 19.5556C8.97111 19.5556 7.33333 17.9178 7.33333 15.8889H0V19.5556C0 20.9 1.1 22 2.44444 22H19.5556C20.9 22 22 20.9 22 19.5556V15.8889Z" fill="#2B292D"/>
+                            </svg>
+                            <p class="features-pretitle">
+                                Develop across platforms
+                            </p>
+                        </div>
+                        <p class="features-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                        <hr class="features-line">
+                    </div>                   
+                </div>
+            </div>
+            <div>
+                <img src="./img/features/girl.svg" alt="pic-girl">
+            </div>
+            <div>
+                <img class="features-screen" src="./img/features/Invision Screen.png" alt="screen">
+            </div>
+        </div>
+    </section>
+    <section class="inbox container-1440">
         <div class="container flex flex__inbox-column">
             <div class="container-image">
                 <img class="container-image_img" src="./img/inbox/ouch.svg" alt="img_inbox">
@@ -147,9 +217,9 @@
             </div>
         </div>
     </section>
-    <section class="better">
+    <section class="better container-1440">
         <div class="container flex flex-column">
-                <div class="info">
+            <div class="info">
                 <p class="info_pretitle info_pretitle-blue">
                     Communicate Better
                 </p>
@@ -188,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="categories">
+    <section class="categories container-1440">
         <div class="container flex flex-column">
             <div class="container">
                 <h6 class="info_pretitle info_pretitle-black">Engage Visitors</h6>
@@ -225,7 +295,154 @@
             </div>
         </div>
     </section>
-    <section class="all-surfaces"> 
+    <section class="logos logos--lower container">
+        <div class="logos__grid">
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap1.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap2.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap3.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap4.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap5.png" alt="Bitmap">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="./img/logos/bitmap6.png" alt="Bitmap">
+            </div>
+        </div>
+    </section>
+    <section class="trusted container-1440">
+        <div class="carousel">
+            <div>
+                <p class="trusted_title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </p>
+                <p class="trusted_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="trusted_name">
+                    Viella Malkovich
+                </p>
+                <p class="trusted_position">
+                    Creative Director at Johnson
+                </p>
+            </div>
+            <div>
+                <p class="trusted_title trusted_title-red">
+                    Trusted by the world’s most innovative businesses – big and small
+                </p>
+                <p class="trusted_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="trusted_name">
+                    Viella Malkovich
+                </p>
+                <p class="trusted_position">
+                    Creative Director at Johnson
+                </p>
+            </div>
+            <div>
+                <p class="trusted_title trusted_title-yellow">
+                    Trusted by the world’s most innovative businesses – big and small
+                </p>
+                <p class="trusted_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="trusted_name">
+                    Viella Malkovich
+                </p>
+                <p class="trusted_position">
+                    Creative Director at Johnson
+                </p>
+            </div>
+        </div>
+        <div>
+            <img class="trusted_img" src="./img/trusted/greenball.svg" alt="green ball">
+        </div>
+
+    </section>
+    <section class="about container-1440">
+        <div class="container">
+            <div class="about-title_box">
+                <h5 class="about-title">
+                    We’re hiring
+                </h5>
+                <p class="about-undertitle">
+                    We’re a team of lifelong learners. We’re equal parts left and right brained.
+                </p>
+                <button class="button button-about">
+                    More about Company
+                </button>
+            </div>
+            <div class="about-items">
+                <div class="about-grid">
+                    <div class="about-pretitle_box">
+                        <p class="about-pretitle">
+                             Front-End Developer
+                        </p>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                       </p>
+                    </div>
+                   <p class="about-location">
+                        Los Angeles / Remote
+                   </p>
+                   <div class="about-icon-box">
+                        <p class="about-icon">
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-items">
+                <div class="about-grid">
+                    <div class="about-pretitle_box">
+                        <p class="about-pretitle">
+                            Community Manager
+                        </p>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                       </p>
+                    </div>
+                   <p class="about-location">
+                        New York / Full-Time
+                   </p>
+                   <div class="about-icon-box">
+                    <p class="about-icon">
+                        >
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="about-items">
+                <div class="about-grid">
+                    <div class="about-pretitle_box">
+                        <p class="about-pretitle">
+                            UX/UI Designer
+                        </p>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                       </p>
+                    </div>
+                   <p class="about-location">
+                        New York / Full-Time
+                   </p>
+                   <div class="about-icon-box">
+                    <p class="about-icon">
+                        >
+                    </p>
+                </div>
+                </div>
+            </div>           
+        </div>
+    </section>
+    <section class="all-surfaces container-1440"> 
         <div class="container">
             <h6 class="all-surfaces_title">
                 All Surfaces Covered
@@ -244,7 +461,7 @@
             </div>
         </div>
     </section>
-    <section class="trial">
+    <section class="trial container-1440">
         <div class="container flex trial_grid">
             <div class="trial_img trial_box">
                 <img src="./img/trial/cat.png" alt="picture cat">
@@ -279,7 +496,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer container-1440>
         <div class="container">
             <div class="container footer_grid footer_container">
                 <div class="logo_box">
@@ -355,5 +572,24 @@
             </div>  
         </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, doloremque. Deleniti, aliquid natus? Fugiat, iusto suscipit! Facere, debitis. Amet debitis consequatur quasi magnam. Iusto libero beatae quae ipsum, ex quo.
+            </p>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <div id="up">
+        <span>></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html>
