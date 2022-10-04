@@ -11,4 +11,9 @@ $('.features-item > div').on('click', function(){
     $(this).children('.features-pretitle').toggleClass('features-change-color');
     $(this).children('.features-icon').children('.features-icon_img').toggleClass('features-change-color-icon');
     $(this).next('').next('.features-line').toggleClass('features-change-color-line');
+});
+
+$('#about-link').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#about').offset().top}, 1000)
 })
