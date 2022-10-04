@@ -138,7 +138,7 @@
 }
 
 .main_container > div:first-of-type{
-    z-index: 2;
+    z-index: 1;
 }
 
 .main_container > div:last-of-type{
