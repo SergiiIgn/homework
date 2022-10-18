@@ -27,7 +27,6 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 .header-logo_img{
     width: 128px;
     height: 39px;
@@ -315,9 +314,22 @@ padding: 100px 16px 100px;
     position: relative;
 }
 
-.family-item_img{
-    border-radius: 10px;
+.card{
+    height: 100%;
     max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover .image{
+    transform: scale(1.1);
 }
 
 .family-item_box{
@@ -418,11 +430,6 @@ padding: 100px 16px 100px;
 .guides-text_box{
     max-width: 538px;
     margin-bottom: 20px;
-}
-
-.guides_img{
-    border-radius: 20px;
-    max-width: 100%;
 }
 
 .guides_grid{
